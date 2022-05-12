@@ -1,4 +1,4 @@
-function CalAreaSquare(){
+function calAreaSquare(){
     let number1= parseFloat(document.getElementById("InputNumber1").value);
     let number2= parseFloat(document.getElementById("InputNumber2").value);
     let number3= parseFloat(document.getElementById("InputNumber3").value);
@@ -15,7 +15,7 @@ function CalAreaSquare(){
 
 }
 
-function EquationSolve1(){
+function equationSolve1(){
     let number1= parseFloat(document.getElementById("InputNumber1").value);
     let number2= parseFloat(document.getElementById("InputNumber2").value);
     let isEqualZero=number1==number2&&number2==0;
@@ -33,7 +33,7 @@ function EquationSolve1(){
     document.getElementById("Result").innerText="Phương trình "+result;
 }
 
-function  CalRectangle(){
+function  calRectangle(){
     let number1= parseFloat(document.getElementById("InputNumber1").value);
     let number2= parseFloat(document.getElementById("InputNumber2").value);
 
@@ -42,14 +42,15 @@ function  CalRectangle(){
     document.getElementById("Result").innerText="Diện tích hình chũ nhật là :"+areRectangle;
 }
 
-function EquationSolve2(){
+function equationSolve2(){
     let number1= parseFloat(document.getElementById("InputNumber1").value);
     let number2= parseFloat(document.getElementById("InputNumber2").value);
     let number3= parseFloat(document.getElementById("InputNumber3").value);
 
 
+
 }
-function CheckAge(){
+function checkAge(){
     let number1= parseFloat(document.getElementById("InputNumber1").value);
     let number2= parseFloat(document.getElementById("InputNumber2").value);
     let number3= parseFloat(document.getElementById("InputNumber3").value);
@@ -75,14 +76,14 @@ function CheckAge(){
     else result3="số thứ ba không là số tuổi của một người";
 document.getElementById("Result").innerText=result1+"\n"+result2+"\n"+result3;
 }
-function  CalAreaTriangle(){
+function  calAreaTriangle(){
     let number1= parseFloat(document.getElementById("InputNumber1").value);
     let number2= parseFloat(document.getElementById("InputNumber2").value);
 
     let AreaTriangle=(number1*number2/2)
     document.getElementById("Result").innerText="Diện tích tam giác vuông là :"+AreaTriangle;
 }
-function  CheckTriangle(){
+function  checkTriangle(){
     let number1= parseFloat(document.getElementById("InputNumber1").value);
     let number2= parseFloat(document.getElementById("InputNumber2").value);
     let number3= parseFloat(document.getElementById("InputNumber3").value);
