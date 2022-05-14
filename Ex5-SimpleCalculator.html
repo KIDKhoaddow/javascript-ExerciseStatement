@@ -15,6 +15,12 @@
             height: 30px;
 
         }
+        output{
+            appearance: textfield;
+            width: 120px;
+            height: 20px;
+            border: 1px black solid;
+        }
 
     </style>
 </head>
@@ -22,34 +28,35 @@
 <table>
     <tr>
         <td colspan="4">
-            <input type="text" id ="ShowCalculation">
+            <output type="text" id ="showCalculation"></output>
         </td>
 
     </tr>
     <tr>
-        <td><button id="Number1">1</button></td>
-        <td><button id="Number2">2</button></td>
-        <td><button id="Number3">3</button></td>
-        <td><button id="Plus">+</button></td>
+        <td><button onclick="number1()" id="number1" value="1">1</button></td>
+        <td><button onclick="number2()" id="number2" value="2">2</button></td>
+        <td><button onclick="number3()" id="number3" value="3">3</button></td>
+        <td><button onclick="plus()" id="plus" value="+">+</button></td>
     </tr>
     <tr>
-        <td><button id="Number4">4</button></td>
-        <td><button id="Number5">5</button></td>
-        <td><button id="Number6">6</button></td>
-        <td><button id="Minus">-</button></td>
+        <td><button onclick="number4()" id="number4" value="4">4</button></td>
+        <td><button onclick="number5()" id="number5" value="5">5</button></td>
+        <td><button onclick="number6()" id="number6" value="6">6</button></td>
+        <td><button onclick="minus()" id="minus" value="-">-</button></td>
     </tr>
     <tr>
-        <td><button id="Number7">7</button></td>
-        <td><button id="Number8">8</button></td>
-        <td><button id="Number9">9</button></td>
-        <td><button id="Multi">X</button></td>
+        <td><button onclick="number7()" id="number7" value="7">7</button></td>
+        <td><button onclick="number8()" id="number8" value="8">8</button></td>
+        <td><button onclick="number9()" id="number9" value="9">9</button></td>
+        <td><button onclick="multi()" id="multi" value="*">X</button></td>
     </tr>
     <tr>
-        <td><button id="Clear">C</button></td>
-        <td><button id="Number0">0</button></td>
-        <td><button id="Equal">=</button></td>
-        <td><button id="Division">/</button></td>
+        <td><button onclick="clearShow()" id="clearShow"  >C</button></td>
+        <td><button onclick="number0()" id="number0" value="0">0</button></td>
+        <td><button onclick="equal()" id="equal" >=</button></td>
+        <td><button onclick="division()" id="division" value="/">/</button></td>
     </tr>
 </table>
 </body>
+<script src="Ex5-SimpleCalculator.js"></script>
 </html>
