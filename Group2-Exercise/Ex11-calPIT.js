@@ -1,0 +1,1 @@
+let img="Picture/Part7.jpg"

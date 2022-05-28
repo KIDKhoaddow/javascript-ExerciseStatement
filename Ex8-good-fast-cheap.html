@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="radio" id="fast" onclick="checkFast()">
+    <input type="radio" id="cheap" onclick="checkCheap()">
+    <input type="radio"  id="good" onclick="checkGood()">
+
+    
+</body>
+<script>
+      function checkGood() {
+    let fast = document.getElementById("fast").checked
+    let cheap = document.getElementById("cheap").checked
+    if (fast && cheap) {
+      document.getElementById("fast").checked = false
+    }
+  }
+
+  function checkFast() {
+    let good = document.getElementById("good").checked
+    let cheap = document.getElementById("cheap").checked
+    if (good && cheap) {
+      document.getElementById("cheap").checked = false
+    }
+  }
+
+  function checkCheap() {
+    let fast = document.getElementById("fast").checked
+    let good = document.getElementById("good").checked
+    if (fast && good) {
+      document.getElementById("good").checked = false
+    }
+  }
+</script>
+</html>
